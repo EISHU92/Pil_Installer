@@ -20,6 +20,9 @@ case $1 in
   cp -r install__ $HOME/.pil/install__
   echo "Dont remove this directory while you had pil." >> $HOME/.pil/readme.txt
   cd $PWDLATER
+  else
+  echo "No initial program found {/bin/wget Not found}"
+  fi
   ;;
   remove)
   if [ -f $HOME/.pil/remove.list ]; then
