@@ -20,8 +20,6 @@ case $1 in
   cp -r install__ $HOME/.pil/install__
   echo "Dont remove this directory while you had pil." >> $HOME/.pil/readme.txt
   cd $PWDLATER
-  else
-  echo "No initial program found {/bin/wget Not found}"
   fi
   ;;
   remove)
@@ -44,13 +42,14 @@ case $1 in
   echo "Remove list not found. On $HOME/.pil/remove.list"
   exit 1
   fi
+  ;;
 esac
 else
   if [ -f /bin/wget ]; then
   export PWDLATER=$PWD
   cd /tmp/pilinstall
   mkdir -p /tmp/pilinstall
-  wget https://github.com/EISHU92/pil/releases/download/Pil_Releases/pil.tar
+  wget https://github.com/EISHU92/pil/releases/download/Pil_7/pil1.tar
   tar -xf $PWD/pil.tar
   chmod 777 *
   sudo bash $PWD/install install
@@ -60,5 +59,6 @@ else
   cp -r install__ $HOME/.pil/install__
   echo "Dont remove this directory while you had pil." >> $HOME/.pil/readme.txt
   cd $PWDLATER
- esac
+  fi
+  ;;
 fi
