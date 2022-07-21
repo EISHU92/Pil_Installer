@@ -60,4 +60,5 @@ else
   cp -r install__ $HOME/.pil/install__
   echo "Dont remove this directory while you had pil." >> $HOME/.pil/readme.txt
   cd $PWDLATER
+ esac
 fi
