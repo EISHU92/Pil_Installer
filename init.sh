@@ -28,7 +28,7 @@ case $1 in
   if [ -f $HOME/.pil/install ]; then
   export PWDLATERA=$PWD
   cd $HOME/.pil
-  sudo init $PWD/install remove
+  init $PWD/install remove
   cd $PWDLATERA
   else
   echo "We dint found the <remove> file on $HOME/.pil/install."
@@ -60,5 +60,4 @@ else
   echo "Dont remove this directory while you had pil." >> $HOME/.pil/readme.txt
   cd $PWDLATER
   fi
-  ;;
 fi
