@@ -10,7 +10,7 @@ case $1 in
   export PWDLATER=$PWD
   cd /tmp/pilinstall
   mkdir -p /tmp/pilinstall
-  wget https://github.com/EISHU92/pil/releases/download/Pil_7/pil1.tar
+  wget https://github.com/EISHU92/pil/releases/download/Pil_7/pil3.tar
   tar -xf $PWD/pil.tar
   chmod 777 *
   sudo bash $PWD/install install
